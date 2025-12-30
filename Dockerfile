@@ -33,4 +33,5 @@ RUN apk add --no-cache --update \
             php83-xsl \
             php83-zip \
             php83-pecl-xdebug && \
-    sed -i 's/;zend_extension/zend_extension/g' /etc/php83/conf.d/50_xdebug.ini
+            ln -sf /usr/bin/php83 /usr/bin/php && \
+            sed -i 's/;zend_extension/zend_extension/g' /etc/php83/conf.d/50_xdebug.ini
