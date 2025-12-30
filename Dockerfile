@@ -1,36 +1,36 @@
-FROM alpine:3.17.3
+FROM alpine:3.23.2
 
 RUN apk add --no-cache --update \
             git \
             patch \
             curl \
             less \
-            php81 \
-            php81-bcmath \
-            php81-ctype \
-            php81-curl \
-            php81-dom \
-            php81-fileinfo \
-            php81-iconv \
-            php81-intl \
-            php81-json \
-            php81-mbstring \
-            php81-mysqli \
-            php81-sqlite3 \
-            php81-opcache \
-            php81-openssl \
-            php81-pdo \
-            php81-pdo_mysql \
-            php81-pdo_sqlite \
-            php81-phar \
-            php81-session \
-            php81-simplexml \
-            php81-sodium \
-            php81-tokenizer \
-            php81-xml \
-            php81-xmlwriter \
-            php81-xmlreader \
-            php81-xsl \
-            php81-zip \
-            php81-pecl-xdebug && \
-    sed -i 's/;zend_extension/zend_extension/g' /etc/php81/conf.d/50_xdebug.ini
+            php83 \
+            php83-bcmath \
+            php83-ctype \
+            php83-curl \
+            php83-dom \
+            php83-fileinfo \
+            php83-iconv \
+            php83-intl \
+            php83-json \
+            php83-mbstring \
+            php83-mysqli \
+            php83-sqlite3 \
+            php83-opcache \
+            php83-openssl \
+            php83-pdo \
+            php83-pdo_mysql \
+            php83-pdo_sqlite \
+            php83-phar \
+            php83-session \
+            php83-simplexml \
+            php83-sodium \
+            php83-tokenizer \
+            php83-xml \
+            php83-xmlwriter \
+            php83-xmlreader \
+            php83-xsl \
+            php83-zip \
+            php83-pecl-xdebug && \
+    sed -i 's/;zend_extension/zend_extension/g' /etc/php83/conf.d/50_xdebug.ini
